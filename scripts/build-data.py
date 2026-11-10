@@ -16,6 +16,9 @@ def save(name,value):
  p=ROOT/name;t=p.with_suffix('.next.json');t.write_text(json.dumps(value,ensure_ascii=False,separators=(',',':'),allow_nan=False),'utf8');t.replace(p)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 TAGS=[('M_PLASTIC','material','พลาสติก'),('M_METAL','material','โลหะ'),('M_PAPER','material','กระดาษและเยื่อกระดาษ'),('M_GLASS','material','แก้ว'),('M_RUBBER','material','ยาง'),('M_CHEMICAL','material','สารเคมี'),('M_BIOMASS','material','วัสดุอินทรีย์และชีวมวล'),('A_SORT','activity','การคัดแยกวัสดุ'),('A_RECYCLE','activity','การรีไซเคิลวัสดุ'),('A_REPAIR','activity','การซ่อมแซมและปรับสภาพ'),('A_REUSE','activity','การนำวัสดุกลับมาใช้ในการผลิต'),('A_RECOVER','activity','การกู้คืนสาร'),('A_ENERGY','activity','การกู้คืนพลังงาน')]
+# These three categories use per-factory contextual reviews in ce-overrides.json,
+# rather than broad keyword matches that confuse products, utilities and waste.
+TAGS[7:7]=[('M_EWASTE','material','E-waste'),('M_SOLAR_PANEL','material','Solar panel'),('M_EV_BATTERY','material','EV battery')]
 MATERIALS={
  'M_PLASTIC':r'พลาสติก|พอลิเมอร์|โพลิเมอร์|โพลีเอทิลีน|พอลิเอทิลีน|โพลีโพรพิลีน|พอลิโพรพิลีน|โพลีสไตรีน|โพลีคาร์บอเนต|polyethylene|polypropylene|polycarbonate|polyvinyl|plastic',
  'M_METAL':r'โลหะ|เหล็ก|อลูมิเนียม|อะลูมิเนียม|อลูมินัม|ทองแดง|ทองเหลือง|สแตนเลส|สเตนเลส|สังกะสี|ทังสเตน|steel|alumin(?:ium|um)|copper|brass|metal',
@@ -93,6 +96,7 @@ def main():
   ts,rs=screen(x.get('activity_text'))
   override=overrides.get(fid,{})
   if override:assert override['source_row']==x['source_row'],('Override source row changed',fid)
+  if override.get('activity_text_sha256'):assert hashlib.sha256((x.get('activity_text') or '').encode('utf8')).hexdigest()==override['activity_text_sha256'],('Re-review changed activity_text',fid)
   ts=[t for t in ts if t['tag_id'] not in override.get('remove',[])]
   for t in override.get('add',[]):
    assert t['evidence_text'] in (x.get('activity_text') or '')
