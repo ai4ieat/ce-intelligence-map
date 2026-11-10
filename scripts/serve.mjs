@@ -1,0 +1,11 @@
+import http from 'node:http';
+import {createReadStream} from 'node:fs';
+import {stat} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../public/',import.meta.url));
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.geojson':'application/geo+json; charset=utf-8','.svg':'image/svg+xml','.ttf':'font/ttf','.jpg':'image/jpeg'};
+const server=http.createServer(async(req,res)=>{try{if(!['GET','HEAD'].includes(req.method)){res.writeHead(405).end();return;}const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname);const file=path.resolve(root,'.'+(name.endsWith('/')?name+'index.html':name));if(!file.startsWith(root)){res.writeHead(403).end();return;}const info=await stat(file);if(!info.isFile())throw Error('file');res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','Content-Length':info.size,'Cache-Control':'no-cache','X-Content-Type-Options':'nosniff'});if(req.method==='HEAD')res.end();else createReadStream(file).pipe(res);}catch{res.writeHead(404).end('Not found');}});
+let port=Number(process.env.PORT||8020);
+server.on('error',err=>{if(err.code==='EADDRINUSE'&&!process.env.PORT){port++;server.listen(port,'127.0.0.1');}else{console.error(err);process.exit(1);}});
+server.listen(port,'127.0.0.1',()=>console.log(`CE Intelligence Map: http://127.0.0.1:${server.address().port}/`));

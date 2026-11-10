@@ -1,0 +1,1 @@
+{"name":"ce-intelligence-map","version":"1.0.0","private":true,"type":"module","description":"Local static CE registry map","scripts":{"start":"node scripts/serve.mjs","test":"node --test test/*.test.mjs","validate":"node scripts/validate.mjs"},"engines":{"node":">=22"}}

@@ -1,0 +1,534 @@
+[
+  {
+    "estate_id": "EST_948AE1CDBEC4",
+    "estate_name": "CP Digital Valley",
+    "existing_map_estate_id": null,
+    "map_id": null,
+    "match_basis": "unmatched"
+  },
+  {
+    "estate_id": "EST_AEB9AEE77E8F",
+    "estate_name": "บางปะอิน",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-9c85713b20b6",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_83553D5B8CB7",
+    "estate_name": "มาบตาพุด",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-a843fc699638",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_78A46E51AE92",
+    "estate_name": "อาร์ ไอ แอล",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-0ad84363dd5c",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_B8CA185B3BCF",
+    "estate_name": "เอส อ่างทอง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-756503ca205f",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_A3261FABD50F",
+    "estate_name": "อมตะซิตี้ ชลบุรี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-129dc678f51a",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_B7C41D76F9D5",
+    "estate_name": "บางปู",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-f4f1c79b5675",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_0F3D1CDE8D01",
+    "estate_name": "เกตเวย์ ซิตี้",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-69728c9c04b2",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_11E867DD9DF0",
+    "estate_name": "สำนักงานท่าเรืออุตสาหกรรมมาบตาพุด",
+    "existing_map_estate_id": null,
+    "map_id": null,
+    "match_basis": "unmatched"
+  },
+  {
+    "estate_id": "EST_C4DC9F266201",
+    "estate_name": "แหลมฉบัง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-06d8b313a48a",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_5F0DF00F532E",
+    "estate_name": "ภาคเหนือ",
+    "existing_map_estate_id": null,
+    "map_id": null,
+    "match_basis": "unmatched"
+  },
+  {
+    "estate_id": "EST_7B3D6EBA41AA",
+    "estate_name": "ทีเอฟดี 2",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-5a0a60ef60a2",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_77F3CB76A336",
+    "estate_name": "อมตะซิตี้ ระยอง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-24b55f0c0b82",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_6193F492B44D",
+    "estate_name": "ลาดกระบัง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-72b59e647a96",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_4D1EA5B8F030",
+    "estate_name": "ดับบลิวเอชเอตะวันออก (มาบตาพุด)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-cbb5c21d0d4a",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_6B7FF5C69889",
+    "estate_name": "บ้านหว้า",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-87cc760e97e7",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_7462C263417B",
+    "estate_name": "อารยะ",
+    "existing_map_estate_id": null,
+    "map_id": "office-a4576954e524",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_B160F7A317E4",
+    "estate_name": "เอเซีย",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-d55277aa38a0",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_9DC5B23A2556",
+    "estate_name": "ปิ่นทอง (โครงการ 5)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-3b9b66303693",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_0F7094AEB608",
+    "estate_name": "เวลโกรว์",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-d1a61cd2b3e2",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_6FE17770EC6A",
+    "estate_name": "หลักชัยเมืองยาง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-61bfec0ebede",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_7C796D2AD345",
+    "estate_name": "อีสเทิร์นซีบอร์ด (ระยอง)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-5ddaa0f995d7",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_3547E968C482",
+    "estate_name": "ดับบลิวเอชเอ อีสเทิร์นซีบอร์ด 2.1",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-f17816fb4175",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_54ACE7637634",
+    "estate_name": "ดับบลิวเอชเอ อีสเทิร์นซีบอร์ด 2",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-98f4bd47ffd1",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_5568402F6746",
+    "estate_name": "เวิลด์ (ลำพูน)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-8bbddee462c4",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_2F4E414D9283",
+    "estate_name": "เอเพ็กซ์กรีน อินดัสเตรียล เอสเตท",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-c42a0b1b1ca3",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_9477ADAC42F6",
+    "estate_name": "อมตะซิตี้ ชลบุรี 2",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-d591e14d44c0",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_1EF46D369088",
+    "estate_name": "ดับบลิวเอชเอ อีสเทิร์นซีบอร์ด 4",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-e50818ad4e47",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_544796E5870B",
+    "estate_name": "ซีพีจีซี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-658f672ad9ae",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_9CEF74B2B079",
+    "estate_name": "แพรกษา อินดัสเทรียลล์",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-f0c0223247a7",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_CC165BEC65C5",
+    "estate_name": "ดับบลิวเอชเอ ชลบุรี 1",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-7266416e5f0a",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_02CBB95C7590",
+    "estate_name": "ดับบลิวเอชเอ อีสเทิร์นซีบอร์ด 1",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-a41c726012c7",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_95293021DDE2",
+    "estate_name": "ภาคใต้จังหวัดสงขลา",
+    "existing_map_estate_id": null,
+    "map_id": null,
+    "match_basis": "unmatched"
+  },
+  {
+    "estate_id": "EST_D5DA0F9F3775",
+    "estate_name": "ผาแดง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-4a6d4e84a56a",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_10275C6CB1BB",
+    "estate_name": "อัญธานี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-68bf46dc2cab",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_69AD7AA95B6E",
+    "estate_name": "บางพลี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-6d82f0f6d32b",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_A36BFAA31C03",
+    "estate_name": "ดับบลิวเอชเอ อีสเทิร์นซีบอร์ด 3",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-a4274529e42d",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_BE02A1819993",
+    "estate_name": "ดับบลิวเอชเอ ระยอง 36",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-c6bbb764ae0a",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_7855CEBAF093",
+    "estate_name": "แก่งคอย",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-057b00d3f134",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_E80FD0949580",
+    "estate_name": "โรจนะหนองใหญ่ จังหวัดชลบุรี",
+    "existing_map_estate_id": null,
+    "map_id": null,
+    "match_basis": "unmatched"
+  },
+  {
+    "estate_id": "EST_2A24ADE22498",
+    "estate_name": "ปิ่นทอง (โครงการ 3)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-77a2a8de1b90",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_C18ACE03DEE2",
+    "estate_name": "บ่อทอง 33",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-765b1aab6b5b",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_8F33B0508C73",
+    "estate_name": "สมุทรสาคร",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-fa9c9a6f1840",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_B423D6A2EF1D",
+    "estate_name": "อมตะ สมาร์ทชิตี้ ชลบุรี",
+    "existing_map_estate_id": null,
+    "map_id": null,
+    "match_basis": "unmatched"
+  },
+  {
+    "estate_id": "EST_A0A123CA4468",
+    "estate_name": "เอเซีย (สุวรรณภูมิ)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-0b7fbeaaca06",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_33514CB05A17",
+    "estate_name": "ดับบลิวเอชเอ อีสเทิร์นซีบอร์ด 3.1",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-5035c47e1499",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_0DF4906FD8EF",
+    "estate_name": "บางชัน",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-d800e642e2cc",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_A8EF0A89D3E1",
+    "estate_name": "ราชบุรี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-dfdd2e59b919",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_0A3699A647AB",
+    "estate_name": "ปิ่นทอง (แหลมฉบัง)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-c92575391be8",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_3A2663421960",
+    "estate_name": "เอ็กโกระยอง จังหวัดระยอง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-245d23f5a2b1",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_CF0AD878D969",
+    "estate_name": "ปิ่นทอง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-8ab4b7de3024",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_49AFEA08AC7D",
+    "estate_name": "หนองแค",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-47c8d08ab117",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_1136963710F0",
+    "estate_name": "เอเชีย คลีน ชลบุรี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-c403aa72689e",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_EC25648F7AF4",
+    "estate_name": "สินสาคร",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-aae575df06c6",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_392D09B96FEE",
+    "estate_name": "ดับบลิวเอชเอ อินดัสเตรียล เอสเตท ระยอง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-9cf93582f083",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_E9C39688111A",
+    "estate_name": "ดับบลิวเอชเอ อีสเทิร์นซีบอร์ด 5",
+    "existing_map_estate_id": null,
+    "map_id": "office-fae89fb87277",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_F490F65ACC44",
+    "estate_name": "ทีเอฟดี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-4f1d964cc251",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_622680FEE20F",
+    "estate_name": "โรจนะแหลมฉบัง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-2f73d2ec7eb5",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_9048DB3A5AB9",
+    "estate_name": "บางปู (เหนือ)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-e80364e00616",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_A2D34A6B489C",
+    "estate_name": "ดับบลิวเอชเอ ชลบุรี 2",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-3289a47c1d32",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_D4389E482924",
+    "estate_name": "เวิลด์ ฟู๊ด วัลเลย์ ไทยแลนด์",
+    "existing_map_estate_id": null,
+    "map_id": null,
+    "match_basis": "unmatched"
+  },
+  {
+    "estate_id": "EST_DB36B2467610",
+    "estate_name": "หนองละลอก",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-fb8c952f1735",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_5BC0376F943A",
+    "estate_name": "ปิ่นทอง (โครงการ 4)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-ab2d1f082119",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_6BCB870A4868",
+    "estate_name": "โรจนะชลบุรี 2 (เขาคันทรง)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-ab8bd722da4a",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_544DE5F42DD4",
+    "estate_name": "ปิ่นทอง (โครงการ6)",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-e055cde856fc",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_807B81859F01",
+    "estate_name": "ไฮเทค กบินทร์",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-5dcf042b5187",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_36A98FF6EBB2",
+    "estate_name": "นครหลวง",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-962181691300",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_E27EA54C4BEE",
+    "estate_name": "โรจนะหนองใหญ่ 2",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-0669e4ecf854",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_AC4856117B97",
+    "estate_name": "พิจิตร",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-7b558c77f0b0",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_65935D283305",
+    "estate_name": "อุดรธานี",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-5f9e71072610",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_F7E7E21DA5F0",
+    "estate_name": "มหาราชนคร",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-71b1d0414354",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_C2B6A144B868",
+    "estate_name": "สมาร์ท ปาร์ค",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-0f6aa751e3da",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_883CAFAFEB9A",
+    "estate_name": "เฮอร์มีส",
+    "existing_map_estate_id": null,
+    "map_id": "office-ebe91ccfa1eb",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_C93542E7136F",
+    "estate_name": "สงขลา",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-9be7132b1f36",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_1165E978B983",
+    "estate_name": "ยามาโตะ อินดัสทรีส์",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-3e9c4e46b57c",
+    "match_basis": "exact_normalized_name"
+  },
+  {
+    "estate_id": "EST_2EC2CA165553",
+    "estate_name": "สระแก้ว",
+    "existing_map_estate_id": null,
+    "map_id": "ieat-1bf4282d0ce0",
+    "match_basis": "exact_normalized_name"
+  }
+]
