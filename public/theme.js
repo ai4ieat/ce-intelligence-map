@@ -3,26 +3,26 @@
   const key = 'ceim-theme';
   const root = document.documentElement;
   let theme = 'atlas';
-  try { if (localStorage.getItem(key) === 'farm') theme = 'farm'; } catch {}
+  try { if (['forge','farm'].includes(localStorage.getItem(key))) theme = 'forge'; } catch {}
   root.dataset.theme = theme;
   function apply(next) {
     theme = next;
     root.dataset.theme = theme;
     const button = document.getElementById('theme-toggle');
-    const farm = theme === 'farm';
-    button.setAttribute('aria-pressed', String(farm));
-    button.setAttribute('aria-label', farm ? 'ธีมฟาร์ม เปิดอยู่ — สลับเป็นธีมเดิม' : 'สลับเป็นธีมฟาร์ม');
-    button.title = farm ? 'กลับไปธีมเดิม' : 'ลองธีมฟาร์ม';
-    button.querySelector('.theme-label').textContent = farm ? 'ธีมฟาร์ม' : 'ธีมเดิม';
-    button.querySelector('.theme-icon').textContent = farm ? '☀' : '♧';
+    const forge = theme === 'forge';
+    button.setAttribute('aria-pressed', String(forge));
+    button.setAttribute('aria-label', forge ? 'ธีม Forge เปิดอยู่ — สลับเป็น Formal' : 'ธีม Formal เปิดอยู่ — สลับเป็น Forge');
+    button.title = forge ? 'สลับเป็น Formal' : 'สลับเป็น Forge';
+    button.querySelector('.theme-label').textContent = forge ? 'Forge' : 'Formal';
+    button.querySelector('.theme-icon').textContent = forge ? '◈' : '◐';
     try { localStorage.setItem(key, theme); } catch {}
     document.dispatchEvent(new CustomEvent('aim-theme-change', {detail: theme}));
   }
   document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('theme-toggle').addEventListener('click', () => apply(theme === 'farm' ? 'atlas' : 'farm'));
+    document.getElementById('theme-toggle').addEventListener('click', () => apply(theme === 'forge' ? 'atlas' : 'forge'));
     apply(theme);
   });
   window.addEventListener('storage', event => {
-    if (event.key === key && document.getElementById('theme-toggle')) apply(event.newValue === 'farm' ? 'farm' : 'atlas');
+    if (event.key === key && document.getElementById('theme-toggle')) apply(['forge','farm'].includes(event.newValue) ? 'forge' : 'atlas');
   });
 })();

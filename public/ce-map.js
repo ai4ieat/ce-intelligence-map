@@ -11,8 +11,28 @@ export async function createMap(data,onProvince,onEstate){
  map.addControl(new maplibregl.NavigationControl({showCompass:true}),'top-left');map.addControl(new maplibregl.ScaleControl({maxWidth:85,unit:'metric'}),'bottom-left');
  const allEstates=[...areas.features,...offices.features],allPoints=[...points.features,...offices.features];
  let state=null,loaded=false,selectedEstate=null;
- const farmPaints={background:{'background-color':'#e6e5b7'},water:{'fill-color':'#9bcfce'},waterway:{'line-color':'#7fb9b9'},park:{'fill-color':'#c8d89e'},landcover_wood:{'fill-color':'#bfd29a'},landuse_residential:{'fill-color':'#e4dfb4'}};
- function applyTheme(){if(!loaded)return;const palette=document.documentElement.dataset.theme==='farm'?farmPaints:paints;for(const [id,properties] of Object.entries(palette))if(map.getLayer(id))for(const [key,value] of Object.entries(properties))map.setPaintProperty(id,key,value);}
+ const forgePaints={background:{'background-color':'#c6c3b1'},water:{'fill-color':'#468e98'},waterway:{'line-color':'#3e828c'},park:{'fill-color':'#b8bda6'},landcover_wood:{'fill-color':'#aeb79e'},landuse_residential:{'fill-color':'#c2bcaa'}};
+ function applyTheme(){
+  if(!loaded)return;
+  const forge=document.documentElement.dataset.theme==='forge',palette=forge?forgePaints:paints;
+  const estateColor=['case',['==',['get','boundary_status'],'pending'],forge?'#c18b43':'#ac855d',['==',['get','category'],'port'],forge?'#2f817b':'#398d91',forge?'#93474e':'#79618e'];
+  const overlays={
+   'province-fill':{'fill-color':forge?'#c6c3b1':'#dce7d4','fill-opacity':forge?.12:.28},
+   'province-lines':{'line-color':forge?'#7d8170':'#ffffff','line-opacity':forge?.65:.9},
+   'province-selected':{'line-color':forge?'#a16b2d':'#225333'},
+   'clusters':{'circle-color':forge?'#93474e':'#79618e','circle-stroke-color':forge?'#e4cf9c':'#fff'},
+   'cluster-count':{'text-color':forge?'#fff1dc':'#fff'},
+   'area-fill':{'fill-color':estateColor},'area-line':{'line-color':estateColor},
+   'estate-dots':{'circle-color':estateColor,'circle-stroke-color':forge?'#f0e3c4':'white'},
+   'estate-labels':{'text-color':forge?'#633c36':'#655075','text-halo-color':forge?'#e5ddc5':'white'},
+   'province-labels':{'text-color':forge?'#4e5548':'#365740','text-halo-color':forge?'#e5ddc5':'white'},
+   'top-labels':{'text-color':forge?'#4e5548':'#24492e','text-halo-color':forge?'#e5ddc5':'#ffffff'},
+   'estate-selected-fill':{'fill-color':forge?'#d4b56f':'#79539c'},
+   'estate-selected-line':{'line-color':forge?'#763c41':'#4e276f'},
+   'estate-selected-point':{'circle-color':forge?'#d4b56f':'#ac855d','circle-stroke-color':forge?'#763c41':'white'}
+  };
+  for(const [id,properties] of Object.entries({...palette,...overlays}))if(map.getLayer(id))for(const [key,value] of Object.entries(properties))map.setPaintProperty(id,key,value);
+ }
  document.addEventListener('aim-theme-change',applyTheme);
  map.on('remove',()=>document.removeEventListener('aim-theme-change',applyTheme));
  const duration=matchMedia('(prefers-reduced-motion: reduce)').matches?0:650;
