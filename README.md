@@ -2,6 +2,8 @@
 
 เว็บแผนที่สำหรับทีม Circular Economy สำรวจทะเบียนโรงงาน กนอ. 8,604 รายการ พร้อม Tag CE และข้อความหลักฐาน
 
+เว็บสาธารณะ: https://ce-intelligence-map.whateverzeus.chatgpt.site — repository บน GitHub คงเป็น Private
+
 ## เปิดใช้งาน
 
 ใช้ Node.js 22 ขึ้นไป ไม่ต้องติดตั้ง dependencies:
@@ -58,6 +60,6 @@ python -X utf8 scripts/build-data.py --original /path/to/original.xlsx --assesse
 
 ## โครงสร้าง
 
-`public/` เป็นเว็บ static พร้อมเสิร์ฟ มี JavaScript, CSS, ฟอนต์ และข้อมูล ส่วนแผนที่พื้นหลังเรียกบริการภายนอกและต้องใช้อินเทอร์เน็ต การอัปโหลด repository ยังไม่ได้เปิดเว็บไซต์สาธารณะ
+`public/` เป็นเว็บ static พร้อมเสิร์ฟ มี JavaScript, CSS, ฟอนต์ และข้อมูล ส่วนแผนที่พื้นหลังเรียกบริการภายนอกและต้องใช้อินเทอร์เน็ต เว็บเผยแพร่ผ่าน Sites แยกจาก GitHub การ push repository ไม่ได้อัปเดตเว็บอัตโนมัติ
 
 แหล่งที่มาและสิทธิ์ของ dependency อยู่ใน [ATTRIBUTION.md](ATTRIBUTION.md) และไฟล์ license ที่แนบ
