@@ -2,7 +2,7 @@
 
 เว็บแผนที่สำหรับทีม Circular Economy สำรวจทะเบียนโรงงาน กนอ. 8,604 รายการ พร้อม Tag CE และข้อความหลักฐาน
 
-เว็บสาธารณะ: https://ce-intelligence-map.whateverzeus.chatgpt.site — repository บน GitHub คงเป็น Private
+เว็บสาธารณะ: https://ai4ieat.github.io/ce-intelligence-map/ — repository บน GitHub เป็น Public
 
 ## เปิดใช้งาน
 
@@ -60,6 +60,6 @@ python -X utf8 scripts/build-data.py --original /path/to/original.xlsx --assesse
 
 ## โครงสร้าง
 
-`public/` เป็นเว็บ static พร้อมเสิร์ฟ มี JavaScript, CSS, ฟอนต์ และข้อมูล ส่วนแผนที่พื้นหลังเรียกบริการภายนอกและต้องใช้อินเทอร์เน็ต เว็บเผยแพร่ผ่าน Sites แยกจาก GitHub การ push repository ไม่ได้อัปเดตเว็บอัตโนมัติ
+`public/` เป็นเว็บ static พร้อมเสิร์ฟ มี JavaScript, CSS, ฟอนต์ และข้อมูล ส่วนแผนที่พื้นหลังเรียกบริการภายนอกและต้องใช้อินเทอร์เน็ต GitHub Actions ตรวจข้อมูลและ tests ก่อนเผยแพร่เฉพาะ `public/` ไปยัง GitHub Pages ทุกครั้งที่ push สู่ `main` ตั้งค่า Repository → Settings → Pages → Source เป็น GitHub Actions
 
 แหล่งที่มาและสิทธิ์ของ dependency อยู่ใน [ATTRIBUTION.md](ATTRIBUTION.md) และไฟล์ license ที่แนบ
