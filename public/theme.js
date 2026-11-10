@@ -1,9 +1,9 @@
-// Runs in the head so a saved theme is applied before the first paint.
+// Runs in the head so the saved preference or default Forge theme applies before first paint.
 (() => {
   const key = 'ceim-theme';
   const root = document.documentElement;
-  let theme = 'atlas';
-  try { if (['forge','farm'].includes(localStorage.getItem(key))) theme = 'forge'; } catch {}
+  let theme = 'forge';
+  try { if (localStorage.getItem(key) === 'atlas') theme = 'atlas'; } catch {}
   root.dataset.theme = theme;
   function apply(next) {
     theme = next;
@@ -23,6 +23,6 @@
     apply(theme);
   });
   window.addEventListener('storage', event => {
-    if (event.key === key && document.getElementById('theme-toggle')) apply(['forge','farm'].includes(event.newValue) ? 'forge' : 'atlas');
+    if (event.key === key && document.getElementById('theme-toggle')) apply(event.newValue === 'atlas' ? 'atlas' : 'forge');
   });
 })();

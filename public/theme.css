@@ -6,7 +6,6 @@ html[data-theme=forge]{color-scheme:dark;--ink:#eee9db;--muted:#b7b8a9;--green:#
 [data-theme=forge] .brand{color:#e5d9bd;font-family:Georgia,'Leelawadee UI',serif;letter-spacing:.3px}
 [data-theme=forge] .brand small{font-family:'Leelawadee UI',Tahoma,sans-serif;color:#bcb29a;letter-spacing:1.3px}
 [data-theme=forge] .brand-icon{background:#282c22;color:#d4b56f;border:1px solid #a88a4b;border-radius:6px}
-[data-theme=forge] .local-badge{color:#d4b56f;border-color:#665637}
 [data-theme=forge] button,[data-theme=forge] .layer-menu{background:#202820;color:var(--ink);border-color:#49503f;border-radius:5px}
 [data-theme=forge] button:hover{background:#30382b;border-color:#b89a5a}
 [data-theme=forge] :is(button,input,select,summary,a):focus-visible{outline:3px solid #e6c77e;outline-offset:2px}
